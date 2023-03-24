@@ -1,0 +1,128 @@
+<html>
+
+    <title>Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <body >
+       
+
+        <div class="container">
+            <img class="logo" src="C:\Users\Admin\Desktop\Task\assets\Rectangle 1.png" alt="" />
+            <div class="navbar">
+               <span class="navbar" >
+                <h3 style="padding: 5px; margin: 5px; font-weight: bold;">Home</h3>
+                <h3 style="padding: 5px; margin: 5px; font-weight: 100">Cities</h3>
+
+                <h3 style="padding: 5px; margin: 5px; font-weight: 100">News</h3>
+               </span>
+            </div>
+
+            <div class="div">
+                <p style="  font-family: 'Poppins'; font-style: normal;color: #FFFFFF; font-weight: bold; font-size: 20px; line-height: 30px;">Wheather Details</p>
+                <div  style="display: flex; justify-content: space-between;" >
+                    <p  style=" font-family: 'Poppins'; font-style: normal; font-weight: 100; font-size: 20px; line-height: 10px; color: #FFFFFF;">Cloudy</p>
+                    <span   style="padding-right: 100px; font-family: 'Poppins'; font-style: normal; font-weight: 100; font-size: 20px; line-height: 30px; color: #FFFFFF;"><span id="cloud_pct"></span>%</span>
+
+                </div>
+                <div style="display: flex; justify-content: space-between;" >
+                <p style=" font-family: 'Poppins'; font-style: normal; font-weight: 100; font-size: 20px; line-height: 10px; color: #FFFFFF;">Humadity</p>
+                <span style="padding-right: 100px; font-family: 'Poppins'; font-style: normal; font-weight: 100; font-size: 20px; line-height: 30px; color: #FFFFFF;"><span id="humidity"></span>%</span>
+
+                </div>
+                <div style="display: flex; justify-content: space-between;" >
+                <p  style=" font-family: 'Poppins'; font-style: normal; font-weight: 100; font-size: 20px; line-height: 10px; color: #FFFFFF;">Wind</p>
+                <span  style="padding-right: 100px; font-family: 'Poppins'; font-style: normal; font-weight: 100; font-size: 20px; line-height: 30px; color: #FFFFFF;"><span id="wind_speed"></span>km/h</span>
+
+                </div>                
+            </div> 
+            <div >
+
+                <h6 class="div2" id="degress"><span id="temp"></span></h6>
+                <p class="celcius">o</p>
+                
+                <span class="title"><span id="cityName"></span>
+                    <span>
+
+                        <img style="left: 10%;
+                        right: 4.21%;" 
+                       src="C:\Users\Admin\Desktop\Task\assets\Vector.svg">
+                    </span>
+                </span>
+                 
+                   
+                    <span class="subtitle" id="dateTime">
+                    
+                </span>
+                </div> 
+                
+            
+                <div style="position: absolute; height: 600px;width: 100%; ">
+                    <div class="main" style="display:flex">
+                        <h1 class="main" style="">Cities</h1>
+                        <div  class="first" onmouseover="Show()">
+                            <img src="C:\Users\Admin\Desktop\Task\assets\Rectangle 7.svg"/>
+                            <p style="font-family: Poppins; color: #FFFFFF; position: absolute; margin-top: -50px; font-size: 24px;padding: 20px">Thunder</p>
+                            <span class="sub-first">
+                              
+                                <p class="text1" id="temp1">24<sup class="sup" style="font-weight: normal; font-size: 30px;">o</sup></p>
+                                <div class="text2">
+                                    <h4 style="padding: 5px;">Delhi</h4>
+                                    <h5 style="margin-top: -90px;">09/03/23</h5>
+                                    </div>
+                            </span>
+                               
+                        </div>
+                        <div class="second">
+                            <!-- <p>hi</p> -->
+                            <img src="C:\Users\Admin\Desktop\Task\assets\Rectangle 9.svg"/>
+                            <p style="font-family: Poppins; color: #FFFFFF; position: absolute; margin-top: -50px; font-size: 24px;padding: 20px">Cloudy</p>
+
+                            <span class="sub-first">
+
+                                <p class="text1">29<sup class="sup" style="font-weight: normal; font-size: 30px;">o</sup></p>
+                                <div class="text2">
+                                    <h4 style="padding: 5px;">Chennai</h4>
+                                    <h5 style="margin-top: -90px;">9/03/23</h5>
+                                    </div>
+                            </span>
+                               
+                        </div>
+                        <div class="third">
+                            <img src="C:\Users\Admin\Desktop\Task\assets\Rectangle 9.svg"/>
+                            <p style="font-family: Poppins; color: #FFFFFF; position: absolute; margin-top: -50px; font-size: 24px;padding: 20px">Sunny</p>
+
+                            <span class="sub-first">
+
+                                <p class="text1">40<sup class="sup" style="font-weight: normal; font-size: 30px;">o</sup></p>
+                                <div class="text2">
+                                    <h4 style="padding: 5px;">Jaipur</h4>
+                                    <h5 style="margin-top: -90px;">9/03/23</h5>
+                                    </div>
+                            </span>
+                               
+
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <span class="search-title" >
+                       
+                        <!-- <span> -->
+                            <p class="city"  ><input type="text" id="city" onFocus="inputFocus();" style="border: #FFFFFF;margin-left:33%; border-color: #FFFFFF;"  placeholder="Search City"/></p>
+                            
+                            <span id="submit" onclick="OnSubmit()"><img  class="icon" src="C:\Users\Admin\Desktop\Task\assets\search.svg" ><img class="icon1" src="C:\Users\Admin\Desktop\Task\assets\search1.png" ></span>
+
+                        <!-- </span> -->
+                    </span>
+                </div>
+                <div class="container3" style="width:100%;margin-top: 60%; background-color: black;">
+                <img class="image3" style="display: flex; justify-content: center;" src="C:\Users\Admin\Desktop\Task\assets\image 1.svg">
+                </div>
+
+               
+            </div>
+
+        
+        
+        <script src="script.js"></script>
+    </body>
+</html>
